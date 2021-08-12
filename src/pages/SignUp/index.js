@@ -134,7 +134,7 @@ Privacy Policy, and our default Notification Settings." />
                   </div>
                   <div className="login-button-div">
                     <Button type="submit" variant="primary" size="lg" block>
-                      Submit
+                    Create Account
                     </Button>
                   </div>
                   <div className="hr-inf">
