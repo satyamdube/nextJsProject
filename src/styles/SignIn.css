@@ -195,3 +195,16 @@ margin-right:10px;
     box-sizing: border-box;
     color:#fff;
 }
+.label-content label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+}
+.label-content label input{
+    margin-right:10px;
+}
+.label-content label a{
+    text-decoration:none;
+}

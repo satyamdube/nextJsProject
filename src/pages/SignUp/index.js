@@ -21,7 +21,7 @@ import {
   function SignUp() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-  
+    
     const handleChange = (event, f) => {
       event.preventDefault();
       console.log(event);
@@ -31,7 +31,6 @@ import {
   
       //  console.log('st',this.State);
     };
-  
     const loginUser = async (event) => {
       event.preventDefault();
   
@@ -124,17 +123,17 @@ import {
                     />
                     <span className="input-group-append"><i class="feather-eye"></i></span>
                   </Form.Group>
-                  <div className="row">
+                  <div className="row label-content">
                   <div className="col-sm-12">
-                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                     <Form.Check type="checkbox" label="Creating an account means you’re okay with our Terms of Service, 
-Privacy Policy, and our default Notification Settings." />
-                    </Form.Group>
+                     <label>
+                       <input type="checkbox" />Creating an account means you’re okay with our <a href="">Terms of Service, 
+                          Privacy Policy,</a> and our default <a href="">Notification Settings</a>.
+                     </label>
                    </div>
                   </div>
                   <div className="login-button-div">
                     <Button type="submit" variant="primary" size="lg" block>
-                    Create Account
+                       Create Account
                     </Button>
                   </div>
                   <div className="hr-inf">
