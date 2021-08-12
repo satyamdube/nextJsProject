@@ -9,6 +9,7 @@ import {
     Button,
     Form,
   } from "react-bootstrap";
+  import Link from 'next/link';
   import React, { useState, Component } from "react";
   
   function ForgotPassword() {
@@ -56,9 +57,9 @@ import {
             </div>
           </div>
           <div className="login-and-sign-up-part">
-              <span className="backArrowPassword"><img src="back.png" /></span>
+              <span className="backArrowPassword"><Link href="/SignIn"><img src="back.png" /></Link></span>
               <div className="topSignUpMenber">
-                  Not a member? <a href="">Sign up now</a>
+                  Not a member? <Link href="/SignUp"><a>Sign up now</a></Link>
               </div>
               <div className="signInMain">
                   <h1>Forgot Password?</h1>

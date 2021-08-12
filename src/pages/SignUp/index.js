@@ -15,7 +15,7 @@ import {
     Profile,
     Contact,
   } from "react-bootstrap";
-  
+  import Link from 'next/link';
   import React, { useState, Component } from "react";
   
   function SignUp() {
@@ -63,7 +63,7 @@ import {
           </div>
           <div className="login-and-sign-up-part">
               <div className="topSignUpMenber">
-              Already a member?<a href="">Sign in</a>
+              Already a member?<Link href="/SignIn"><a href="">Sign in</a></Link>
               </div>
               <div className="signInMain">
                   <h1>Forgot Password?</h1>

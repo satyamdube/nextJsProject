@@ -9,6 +9,7 @@ import {
     Button,
     Form,
   } from "react-bootstrap";
+  import Link from 'next/link';
   import React, { useState, Component } from "react";
   
   function SignIn() {
@@ -57,7 +58,7 @@ import {
           </div>
           <div className="login-and-sign-up-part">
               <div className="topSignUpMenber">
-                  Not a member? <a href="">Sign Up</a>
+                  Not a member? <Link href="/SignUp"><a>Sign Up</a></Link>
               </div>
               <div className="signInMain">
                   <h1>Sign in to Platform</h1>
@@ -91,7 +92,7 @@ import {
                     </Form.Group>
                    </div>
                    <div className="col-sm-4">
-                   <a className="password" href="">Forgot Password?</a>
+                   <Link href="/ForgotPassword"><a className="password">Forgot Password?</a></Link>
                    </div>
                   </div>
                   </div>
